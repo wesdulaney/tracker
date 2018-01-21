@@ -1,38 +1,104 @@
 
 // Body
-$body-bg: #f5f8fa;
+$body-bg: #272b30;
 
-// Borders
-$laravel-border-color: darken($body-bg, 10%);
-$list-group-border: $laravel-border-color;
-$navbar-default-border: $laravel-border-color;
-$panel-default-border: $laravel-border-color;
-$panel-inner-border: $laravel-border-color;
-
-// Brands
-$brand-primary: #3097D1;
-$brand-info: #8eb4cb;
-$brand-success: #2ab27b;
-$brand-warning: #cbb956;
-$brand-danger: #bf5329;
+// Primary colors
+$text-color: #aaa;
+$primary-color: #ddd;
+$dark-color: darken($body-bg, 10%);
+$bright-color: #fff;
 
 // Typography
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
-$font-family-sans-serif: "Raleway", sans-serif;
+$font-family-sans-serif: Geneva, Tahoma, Verdana, sans-serif;
 $font-size-base: 14px;
-$line-height-base: 1.6;
-$text-color: #636b6f;
+$line-height-base: 1.5;
+
+// Borders
+$dark-color: $dark-color;
+$list-group-border: $dark-color;
+$panel-default-border: $dark-color;
+$panel-inner-border: $dark-color;
+
+// Brands
+$brand-primary: #3A3F44;
+$brand-success: #62c462;
+$brand-info: #5bc0de;
+$brand-warning: #f89406;
+$brand-danger: #ee5f5b;
+
+// States
+$state-success-text: $brand-success;
+$state-info-text: $brand-info;
+$state-warning-text: $brand-warning;
+$state-danger-text: $brand-danger;
+$state-muted-text: $brand-primary;
+$state-primary-text: $primary-color;
+$state-emphasis-text: $bright-color;
 
 // Navbar
-$navbar-default-bg: #fff;
+$navbar-default-bg: $bright-color;
+$navbar-inverse-bg: $body-bg;
+$navbar-margin-bottom: 0;
+$navbar-border-radius: 0;
+$navbar-inverse-brand-color: $bright-color;
+$navbar-inverse-link-active-bg: $dark-color;
+$navbar-inverse-link-hover-bg: $navbar-inverse-link-active-bg;
+
+// Jumbotron
+$jumbotron-padding: 20px;
+$jumbotron-bg: darken(adjust-hue($body-bg, -10), 5%);
 
 // Buttons
 $btn-default-color: $text-color;
+$btn-default-border: $dark-color;
+$btn-primary-border: $dark-color;
+$btn-success-border: $dark-color;
+$btn-info-border: $dark-color;
+$btn-warning-border: $dark-color;
+$btn-danger-border: $dark-color;
+$btn-border-radius-base: 0;
+$btn-border-radius-large: 0;
+$btn-border-radius-small: 0;
+$close-color: $dark-color;
+
+// Tables
+$table-bg-hover: lighten($body-bg, 10%);
+$state-success-bg: $brand-success;
+$state-success-border: darken(adjust-hue($state-success-bg, -10), 5%);
+$state-info-bg: $brand-info;
+$state-info-border: darken(adjust-hue($state-info-bg, -10), 7%);
+$state-warning-bg: $brand-warning;
+$state-warning-border: darken(adjust-hue($state-warning-bg, -10), 5%);
+$state-danger-bg: $brand-danger;
+$state-danger-border: darken(adjust-hue($state-danger-bg, -10), 5%);
 
 // Inputs
 $input-border: lighten($text-color, 40%);
 $input-border-focus: lighten($brand-primary, 25%);
-$input-color-placeholder: lighten($text-color, 30%);
+$input-color-placeholder: lighten($text-color, 10%);
+
+// Tabs
+$nav-tabs-border-color: $dark-color;
+$nav-tabs-link-hover-border-color: $dark-color;
+$nav-tabs-border-color: $dark-color;
+$nav-tabs-active-link-hover-border-color: $dark-color;
+$nav-tabs-active-link-hover-color: $bright-color;
 
 // Panels
-$panel-default-heading-bg: #fff;
+$panel-default-heading-bg: $bright-color;
+
+// Alerts
+$close-color: $dark-color;
+$alert-success-text: $bright-color;
+$alert-info-text: $bright-color;
+$alert-warning-text: $bright-color;
+$alert-danger-text: $bright-color;
+$alert-link-text: lighten($body-bg, 20%);
+$alert-border-radius: 0;
+
+// Modals
+$modal-outer-color: $bright-color;
+$modal-content-bg: lighten($body-bg, 2%);
+$modal-outer-bg: lighten($modal-content-bg, 10%);
+$modal-header-border-color: $body-bg;

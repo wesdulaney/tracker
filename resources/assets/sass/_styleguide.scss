@@ -1,0 +1,108 @@
+
+.nav-tabs > li > a {
+    color: $text-color;
+    &:hover,
+    &:focus {
+        color: $dark-color;
+    }
+}
+
+.jumbotron {
+    border-bottom: 1px solid $dark-color;
+}
+
+p.text-primary {
+    color: $state-primary-text;
+}
+
+p.text-muted {
+    color: $state-muted-text;
+}
+
+p.text-success {
+    color: $state-success-text;
+}
+
+p.text-info {
+    color: $state-info-text;
+}
+
+p.text-warning {
+    color: $state-warning-text;
+}
+
+p.text-danger {
+    color: $state-danger-text;
+}
+
+tr.success,
+tr.info,
+tr.warning,
+tr.danger {
+    color: $state-emphasis-text;
+}
+
+.has-success .form-control {
+    background-color: lighten($state-success-bg, 25%);
+}
+
+.has-warning .form-control {
+    background-color: lighten($state-warning-bg, 25%);
+}
+
+.has-error .form-control {
+    background-color: lighten($state-danger-bg, 25%);
+}
+
+.has-feedback .form-control-feedback {
+    right: floor(($grid-gutter-width / 5));
+}
+
+.feedback-message {
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.has-success .feedback-message {
+    color: $state-success-text;
+}
+
+.has-error .feedback-message {
+    color: $state-danger-text;
+}
+
+.modal-header, 
+.modal-footer {
+    background-color: $modal-outer-bg;
+    color: $modal-outer-color;
+}
+
+.alert {
+    .alert-link {
+        color: $alert-link-text;
+        text-decoration: underline;
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+}
+
+.alert-dismissible {
+    .close {
+        color: $dark-color;
+    }
+}
+
+.close {
+    @include opacity(.5);
+
+    &:hover,
+    &:focus {
+        @include opacity(.75);
+    }
+}
+
+.styleguide-padding {
+    padding-bottom: 100px;
+}
