@@ -1419,13 +1419,13 @@ textarea {
 }
 
 a {
-  color: #3A3F44;
+  color: #ddd;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #17191b;
+  color: white;
   text-decoration: underline;
 }
 
@@ -4412,7 +4412,7 @@ fieldset[disabled] .btn-danger.focus {
 }
 
 .btn-link {
-  color: #3A3F44;
+  color: #ddd;
   font-weight: normal;
   border-radius: 0;
 }
@@ -4436,7 +4436,7 @@ fieldset[disabled] .btn-link {
 
 .btn-link:hover,
 .btn-link:focus {
-  color: #17191b;
+  color: white;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -5107,7 +5107,7 @@ tbody.collapse.in {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #3A3F44;
+  border-color: #ddd;
 }
 
 .nav .nav-divider {
@@ -5971,9 +5971,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.5;
   text-decoration: none;
-  color: #3A3F44;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  color: #fff;
+  background-color: #3e444c;
+  border: 1px solid #101214;
   margin-left: -1px;
 }
 
@@ -5995,9 +5995,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:hover,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #17191b;
-  background-color: #eeeeee;
-  border-color: #ddd;
+  color: white;
+  background-color: #272b30;
+  border-color: #101214;
 }
 
 .pagination > .active > a,
@@ -6008,8 +6008,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .active > span:focus {
   z-index: 3;
   color: #fff;
-  background-color: #3A3F44;
-  border-color: #3A3F44;
+  background-color: #272b30;
+  border-color: #101214;
   cursor: default;
 }
 
@@ -6019,9 +6019,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .disabled > a,
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
-  color: #777777;
-  background-color: #fff;
-  border-color: #ddd;
+  color: #aaa;
+  background-color: #3e444c;
+  border-color: #101214;
   cursor: not-allowed;
 }
 
@@ -6088,15 +6088,15 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pager li > span {
   display: inline-block;
   padding: 5px 14px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #3e444c;
+  border: 1px solid #101214;
   border-radius: 15px;
 }
 
 .pager li > a:hover,
 .pager li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: #272b30;
 }
 
 .pager .next > a,
@@ -6113,8 +6113,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
-  color: #777777;
-  background-color: #fff;
+  color: #aaa;
+  background-color: #3e444c;
   cursor: not-allowed;
 }
 
@@ -6234,7 +6234,7 @@ a.label:focus {
 
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #3A3F44;
+  color: #ddd;
   background-color: #fff;
 }
 
@@ -6338,7 +6338,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #3A3F44;
+  border-color: #ddd;
 }
 
 .alert {
@@ -8350,6 +8350,28 @@ button.close {
   }
 }
 
+html {
+  /* Sticky footer styles */
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 80px;
+}
+
+footer {
+  /* Set the fixed height of the footer here */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  padding-top: 14px;
+  border-top: 1px solid #101214;
+  color: #fff;
+}
+
 .nav-tabs > li > a {
   color: #aaa;
 }
@@ -8456,5 +8478,18 @@ tr.danger {
 
 .styleguide-padding {
   padding-bottom: 100px;
+}
+
+.vertical-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vertical-align button {
+  margin-top: 14px;
 }
 

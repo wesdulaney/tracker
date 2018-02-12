@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
         <!-- IE Edge Meta Tag -->
@@ -10,10 +10,10 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <!-- Minified CSS -->
         <link rel="stylesheet" type="text/css" href="/css/app.css">
-        <title>Slate</title>
+        <title>Styleguide</title>
     </head>
     <body>
-        <div id="app">
+        <div id="app" class="app-container">
             <nav class="navbar navbar-inverse">
                 <div class="container">
                     <div class="navbar-header">
@@ -188,7 +188,7 @@
                             </div>
 
                             <div class="form-group has-feedback has-success">
-                                <label class="control-label" for="input_success">Input (Default)</label>
+                                <label class="control-label" for="input_success">Input (Success)</label>
                                 <input class="form-control" type="text" id="input_success" name="input_success" placeholder="Enter your information here" value="Information" aria-describedby="input_success_sr_status">
                                 <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
                                 <span class="sr-only" id="input_success_sr_status">Success</span>
@@ -365,6 +365,37 @@
             <div class="container">
                 <div class="row">
                     <section class="col-xs-12">
+                        <h1>Pagination</h1>
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#">&laquo;</a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">4</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">5</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">&raquo;</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <section class="col-xs-12">
                         <h1>Alerts</h1>
                         <div class="alert alert-success alert-dismissible" role="alert">
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
@@ -436,6 +467,23 @@
                 </div>
             </div>
         </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>
+                            <a href="/styleguide">Styleguide</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="text-right">
+                            &copy; 2017-2018 Wesley Dulaney
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <script type="text/javascript" src="/js/app.js"></script>
     </body>
