@@ -8,6 +8,10 @@ $primary-color: #ddd;
 $dark-color: darken($body-bg, 10%);
 $bright-color: #fff;
 
+// Links
+$link-color: $primary-color !default;
+$link-hover-color: lighten($link-color, 15%) !default;
+
 // Typography
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 $font-family-sans-serif: Geneva, Tahoma, Verdana, sans-serif;
@@ -84,6 +88,18 @@ $nav-tabs-link-hover-border-color: $dark-color;
 $nav-tabs-border-color: $dark-color;
 $nav-tabs-active-link-hover-border-color: $dark-color;
 $nav-tabs-active-link-hover-color: $bright-color;
+
+// Pagination
+$pagination-color: $bright-color !default;
+$pagination-bg: lighten($body-bg, 10%);
+$pagination-border: $dark-color;
+$pagination-hover-bg: $body-bg;
+$pagination-hover-border: $pagination-border;
+$pagination-active-bg: $pagination-hover-bg;
+$pagination-active-border: $pagination-border;
+$pagination-disabled-color: $text-color;
+$pagination-disabled-bg: $pagination-bg;
+$pagination-disabled-border: $pagination-border;
 
 // Panels
 $panel-default-heading-bg: $bright-color;

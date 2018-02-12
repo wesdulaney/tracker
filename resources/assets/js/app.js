@@ -20,3 +20,12 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 const app = new Vue({
     el: '#app'
 });
+
+// Load modal content from partial
+$(function() {
+    $('.js-remote-modal-trigger').on('click', function(e) {
+        $('#remote-modal-container').load($(this).data('route'), function() {
+            $('#remote-modal').modal({ show: true });
+        });
+    }); 
+});

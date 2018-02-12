@@ -1,3 +1,24 @@
+html {
+    /* Sticky footer styles */
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 80px;
+}
+
+footer {
+    /* Set the fixed height of the footer here */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    padding-top: 14px;
+    border-top: 1px solid $dark-color;
+    color: $bright-color;
+}
 
 .nav-tabs > li > a {
     color: $text-color;
@@ -105,4 +126,13 @@ tr.danger {
 
 .styleguide-padding {
     padding-bottom: 100px;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+
+    button {
+        margin-top: 14px;
+    }
 }
