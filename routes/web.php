@@ -25,8 +25,8 @@ Route::get('/', function () {
 
 // Accounts
 Route::get('accounts', function () {
-    return view('accounts', ['page_title' => 'Accounts']);
-});
+    return view('accounts.list', ['page_title' => 'Accounts']);
+})->name('accounts.get');
 
 // Contributions
 Route::get('contributions', function () {
