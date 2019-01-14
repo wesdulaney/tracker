@@ -8,7 +8,7 @@
             </div>
             <div class="col-sm-6">
                 <p class="text-right">
-                    {{ $copyright }}
+                    {!! $copyright !!}
                 </p>
             </div>
         </div>
